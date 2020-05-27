@@ -1,6 +1,6 @@
 # Generates a SVG string from a boleto barcode
 
-![Boleto Barcode](boleto-barcode.svg)
+![Boleto Barcode](https://raw.githubusercontent.com/neves/boleto-barcode-svg/master/boleto-barcode.svg)
 
 ## Features
 
