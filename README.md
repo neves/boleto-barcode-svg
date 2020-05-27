@@ -1,5 +1,7 @@
 # Generates a SVG string from a boleto barcode
 
+![Boleto Barcode](boleto-barcode.svg)
+
 ## Features
 
 - [x] Only 500 bytes (minified and gzipped) bundled with [microbundle](https://github.com/developit/microbundle) and [Size Limit](https://github.com/ai/size-limit) controls the size.
