@@ -1,0 +1,28 @@
+{
+  "name": "boleto-barcode-svg",
+  "version": "0.1.0",
+  "description": "Generate brazilian boleto barcode in SVG",
+  "source": "src/index.js",
+  "main": "dist/boleto-barcode-svg.js",
+  "module": "src/index.js",
+  "unpkg": "dist/boleto-barcode-svg.umd.js",
+  "scripts": {
+    "build": "microbundle",
+    "dev": "microbundle watch"
+  },
+  "keywords": [
+    "boleto",
+    "barcode",
+    "brazil",
+    "brasil",
+    "codigo",
+    "barras"
+  ],
+  "author": "Marcos Neves <marcos.neves@gmail.com> (https://github.com/neves)",
+  "license": "MIT",
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^4.5.0",
+    "microbundle": "^0.12.0",
+    "size-limit": "^4.5.0"
+  }
+}
