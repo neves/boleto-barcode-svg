@@ -1,5 +1,5 @@
-import { buildSvg } from "./buildSvg"
-import { itf } from "./itf"
+import { buildSvg } from "./buildSvg.js"
+import { itf } from "./itf.js"
 
 export function boletoBarcodeSvg(number) {
   number = format(number)

@@ -2,13 +2,20 @@
   "name": "boleto-barcode-svg",
   "version": "0.1.0",
   "description": "Generate brazilian boleto barcode in SVG",
+  "author": "Marcos Neves <marcos.neves@gmail.com> (https://github.com/neves)",
+  "license": "MIT",
+  "type": "module",
   "source": "src/index.js",
-  "main": "dist/boleto-barcode-svg.js",
   "module": "src/index.js",
+  "main": "dist/boleto-barcode-svg.js",
   "unpkg": "dist/boleto-barcode-svg.umd.js",
   "scripts": {
     "build": "microbundle",
-    "dev": "microbundle watch"
+    "postbuild": "size-limit",
+    "dev": "microbundle watch",
+    "test": "node src/test.js && echo All tests passing!",
+    "presize": "microbundle",
+    "size": "size-limit"
   },
   "keywords": [
     "boleto",
@@ -18,11 +25,27 @@
     "codigo",
     "barras"
   ],
-  "author": "Marcos Neves <marcos.neves@gmail.com> (https://github.com/neves)",
-  "license": "MIT",
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.5.0",
     "microbundle": "^0.12.0",
     "size-limit": "^4.5.0"
-  }
+  },
+  "size-limit": [
+    {
+      "path": "dist/boleto-barcode-svg.js",
+      "limit": "429"
+    },
+    {
+      "path": "dist/boleto-barcode-svg.esm.js",
+      "limit": "459"
+    },
+    {
+      "path": "dist/boleto-barcode-svg.modern.js",
+      "limit": "471"
+    },
+    {
+      "path": "dist/boleto-barcode-svg.umd.js",
+      "limit": "437"
+    }
+  ]
 }

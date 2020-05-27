@@ -2,7 +2,7 @@
 
 ## Features
 
-- [x] Only 512 bytes bundled with [microbundle](https://github.com/developit/microbundle)
+- [x] Only 500 bytes (minified and gzipped) bundled with [microbundle](https://github.com/developit/microbundle) and [Size Limit](https://github.com/ai/size-limit) controls the size.
 - [x] No dependencies
 - [x] Compatible with browser, node and deno
 - [x] Easy to use, only **one** function with only **one** param
